@@ -1,0 +1,25 @@
+@media screen and (min-width: 769px) {
+  .burger {
+    display: none; /* Скрываем бургер */
+  }
+
+  .nav-links {
+    /* Сбрасываем мобильное позиционирование */
+    position: static;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    flex-direction: row;
+    transform: translateX(0); /* Всегда на экране */
+    transition: none;
+    gap: 30px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .nav-links a:hover {
+    color: #3498db;
+  }
+}

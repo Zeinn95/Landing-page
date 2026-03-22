@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 3%;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    gap: 1rem;
+    z-index: 1;
+    /* Прячем вправо */
+    transform: translateX(100%);
+    transition: 0.4s ease-in-out;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    row-gap: 7px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-btn {
+    background-color: transparent;
+    padding: 0.6rem 0.4rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.burger {
+    display: block; /* Бургер виден на мобильных */
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Состояние при открытии (JS добавит этот класс) */
+.nav-container.nav-active {
+    transform: translateX(0);
+}
