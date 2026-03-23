@@ -12,7 +12,12 @@
     margin: 10px 3%;
 }
 
+.logo {
+    z-index: 4;
+}
+
 .nav-container {
+    background-color: white;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -54,7 +59,27 @@
     z-index: 2;
 }
 
-/* Состояние при открытии (JS добавит этот класс) */
+.close {
+    display: none;
+    z-index: 3;
+    cursor: pointer;
+}
+
+/* Когда меню активно: */
 .nav-container.nav-active {
     transform: translateX(0);
+}
+
+/* Показываем крестик и скрываем бургер при открытом меню */
+.close.nav-active {
+    display: block;
+}
+
+.burger.nav-active {
+    display: none;
+}
+
+.welcome-h1 {
+    font-family: "Space Grotesk";
+    padding: 0px 3%;
 }
