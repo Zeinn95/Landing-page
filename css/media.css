@@ -4,6 +4,13 @@
   }
 }
 
+@media screen and (min-width: 525px) {
+  .welcome-block {
+    margin-left: 5%;
+  }
+}
+
+
 @media screen and (min-width: 769px) {
   .burger, .close {
     display: none; /* Скрываем бургер */
@@ -15,10 +22,12 @@
     height: auto;
     width: auto;
     background-color: transparent;
+    display: flex;
     flex-direction: row;
     transform: translateX(0); /* Всегда на экране */
     transition: none;
     gap: 30px;
+    list-style: none;
   }
 
   .nav-links a {

@@ -1,15 +1,24 @@
+@font-face {
+    font-family: "Space Grotesk";
+    src: url(../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf) format('truetype-variations');
+    font-weight: 400;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.navbar {
+body {
     font-family: "Space Grotesk";
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 3%;
+    margin: 0.7rem 3%;
 }
 
 .logo {
@@ -33,23 +42,23 @@
     transition: 0.4s ease-in-out;
 }
 
-.nav-links {
+.nav-links-small {
     list-style: none;
     display: flex;
     flex-direction: column;
     padding-top: 6rem;
-    row-gap: 7px;
+    row-gap: 0.5rem;
 }
 
-.nav-links a {
+.nav-links-small a {
     color: #000000;
     text-decoration: none;
 }
 
 .nav-btn {
     background-color: transparent;
-    padding: 0.6rem 0.4rem;
-    border-radius: 10px;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.4rem;
     border: 1px solid #191A23;
 }
 
@@ -79,6 +88,10 @@
     display: none;
 }
 
+.nav-links {
+    display: none;
+}
+
 .welcome-block {
     margin-left: 3%;
 }
@@ -88,7 +101,6 @@
 }
 
 .welcome-h1, .welcome-p {
-    font-family: "Space Grotesk";
     width: 95%;
 }
 
@@ -98,12 +110,11 @@
 }
 
 .welcome-btn11 {
-    font-family: "Space Grotesk";
-    margin-top: 20px;
-    padding: 17px 0;
+    margin-top: 1.25rem;
+    padding: 1.1rem 0;
     width: 95%;
     color: #f3f3f3;
     background: #191A23;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.6rem;
 }
