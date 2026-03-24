@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 .navbar {
+    font-family: "Space Grotesk";
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@
     background-color: transparent;
     padding: 0.6rem 0.4rem;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #191A23;
 }
 
 .burger {
@@ -79,7 +79,31 @@
     display: none;
 }
 
+.welcome-block {
+    margin-left: 3%;
+}
+
 .welcome-h1 {
+    font-size: 2.1rem;
+}
+
+.welcome-h1, .welcome-p {
     font-family: "Space Grotesk";
-    padding: 0px 3%;
+    width: 95%;
+}
+
+.welcome-btn1 {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-btn11 {
+    font-family: "Space Grotesk";
+    margin-top: 20px;
+    padding: 17px 0;
+    width: 95%;
+    color: #f3f3f3;
+    background: #191A23;
+    border: none;
+    border-radius: 10px;
 }

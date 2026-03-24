@@ -1,3 +1,9 @@
+@media screen and (min-width: 426px) {
+  .welcome-block {
+    margin-left: 4%;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .burger, .close {
     display: none; /* Скрываем бургер */
