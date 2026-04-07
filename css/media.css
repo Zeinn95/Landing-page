@@ -1,40 +1,79 @@
-@media screen and (min-width: 426px) {
-  .welcome-block {
-    margin-left: 4%;
-  }
+@media all and  (min-width: 476px) {
+   .hero-block {
+        margin-left: 0.9rem;
+   }
 }
 
-@media screen and (min-width: 525px) {
-  .welcome-block {
-    margin-left: 5%;
-  }
+@media all and (min-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        gap: 40px;
+        margin: 1.7rem 2rem;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        position: static;
+        right: auto;
+        width: auto;
+        height: auto;
+        padding: 0;
+        background-color: transparent;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        transition: none;
+        z-index: auto;
+    }
+
+    .nav-btn {
+        padding: 0.9rem 2rem;
+        font-size: 0.9rem;
+        display: block;
+    }
 }
 
+@media all and (min-width: 1024px) {
+    .menu {
+        display: none;
+    }
 
-@media screen and (min-width: 769px) {
-  .burger, .close {
-    display: none; /* Скрываем бургер */
-  }
+    .header {
+        display: flex;
+        gap: 40px;
+        margin: 1.7rem 2rem;
+    }
 
-  .nav-links {
-    /* Сбрасываем мобильное позиционирование */
-    position: static;
-    height: auto;
-    width: auto;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    transform: translateX(0); /* Всегда на экране */
-    transition: none;
-    gap: 30px;
-    list-style: none;
-  }
+    nav {
+        display: block;
+    }
 
-  .nav-links a {
-    font-size: 16px;
-  }
+    .nav-links {
+        display: flex;
+        position: static;
+        right: auto;
+        width: auto;
+        height: auto;
+        padding: 0;
+        background-color: transparent;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        transition: none;
+        z-index: auto;
+    }
 
-  .nav-links a:hover {
-    color: #3498db;
-  }
+    .nav-btn {
+        padding: 0.9rem 2rem;
+        font-size: 0.9rem;
+        display: block;
+    }
 }

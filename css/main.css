@@ -5,116 +5,83 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: "Space Grotesk";
 }
 
-.navbar {
+.menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0.7rem 3%;
-}
-
-.logo {
-    z-index: 4;
-}
-
-.nav-container {
-    background-color: white;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: fixed;
-    gap: 1rem;
-    z-index: 1;
-    /* Прячем вправо */
-    transform: translateX(100%);
-    transition: 0.4s ease-in-out;
-}
-
-.nav-links-small {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding-top: 6rem;
-    row-gap: 0.5rem;
-}
-
-.nav-links-small a {
-    color: #000000;
-    text-decoration: none;
-}
-
-.nav-btn {
-    background-color: transparent;
-    padding: 0.6rem 0.8rem;
-    border-radius: 0.4rem;
-    border: 1px solid #191A23;
-}
-
-.burger {
-    display: block; /* Бургер виден на мобильных */
+    gap: 10px;
     cursor: pointer;
-    z-index: 2;
+    position: relative;
+    z-index: 11;
 }
 
-.close {
+.menu img {
+    cursor: pointer;
+}
+
+.menu .close-menu {
     display: none;
-    z-index: 3;
-    cursor: pointer;
 }
 
-/* Когда меню активно: */
-.nav-container.nav-active {
-    transform: translateX(0);
-}
-
-/* Показываем крестик и скрываем бургер при открытом меню */
-.close.nav-active {
+.menu.show-close .close-menu {
     display: block;
 }
 
-.burger.nav-active {
+.menu.show-close img:first-child {
     display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 1.7rem 2rem;
+}
+
+nav {
+    display: block;
+}
+
+.logo {
+    width: 100%;
+    max-width: 140px;
+    z-index: 2;
 }
 
 .nav-links {
-    display: none;
-}
-
-.welcome-block {
-    margin-left: 3%;
-}
-
-.welcome-h1 {
-    font-size: 2.1rem;
-}
-
-.welcome-h1, .welcome-p {
-    width: 95%;
-}
-
-.welcome-btn1 {
     display: flex;
-    justify-content: center;
+    position: fixed;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    list-style: none;
+    gap: 0.9rem;
+    right: -100%;
+    padding-top: 8rem;
+    flex-direction: column;
+    transition: right 0.3s ease;
+    z-index: 1;
 }
 
-.welcome-btn11 {
-    margin-top: 1.25rem;
-    padding: 1.1rem 0;
-    width: 95%;
-    color: #f3f3f3;
-    background: #191A23;
-    border: none;
-    border-radius: 0.6rem;
+.nav-links.open {
+    right: 0;
+}
+
+.nav-links.open ~ .close-menu {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #191A23;
+    flex-shrink: 0;
 }

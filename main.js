@@ -1,15 +1,22 @@
-const nav = document.querySelector('.nav-container');
-const burger = document.querySelector('.burger');
-const close = document.querySelector('.close');
+const burgerMenu = document.querySelector('.menu img:first-child');
+const closeMenu = document.querySelector('.close-menu');
+const navLinks = document.querySelector('.nav-links');
+const menuContainer = document.querySelector('.menu');
 
-burger.addEventListener('click', () => {
-    nav.classList.add('nav-active');
-    burger.classList.add('nav-active');
-    close.classList.add('nav-active');
+burgerMenu.addEventListener('click', () => {
+    navLinks.classList.add('open');
+    menuContainer.classList.add('show-close');
 });
 
-close.addEventListener('click', () => {
-    nav.classList.remove('nav-active');
-    burger.classList.remove('nav-active');
-    close.classList.remove('nav-active');
+closeMenu.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuContainer.classList.remove('show-close');
+});
+
+// Закрыть меню при клике на ссылку
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuContainer.classList.remove('show-close');
+    });
 });
