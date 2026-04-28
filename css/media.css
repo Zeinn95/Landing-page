@@ -1,18 +1,44 @@
-@media all and  (min-width: 476px) {
-   .hero-block {
-        margin-left: 0.9rem;
-   }
+@media all and (min-width: 375px) {
+    .hero-h2 {
+        font-size: 1.8rem;
+        max-width: 400px;
+    }
+    
+    .hero-illustration {
+        max-width: 275px;
+    }
+
+    .partners-logo {
+         max-width: 95px;
+     }
+}
+
+@media all and (min-width: 476px) {
+    .hero-h2 {
+        font-size: 2rem;
+    }
+
+    .partners-logo {
+        max-width: 105px;
+    }
+
+    .hero-illustration {
+        max-width: 285px;
+    }
 }
 
 @media all and (min-width: 768px) {
-    .menu {
-        display: none;
+    section, .header {
+        padding: 0 1.3rem;
     }
-
+    
     .header {
         display: flex;
         gap: 40px;
-        margin: 1.7rem 2rem;
+    }
+
+    .menu {
+        display: none;
     }
 
     nav {
@@ -33,47 +59,124 @@
         transition: none;
         z-index: auto;
     }
+    
+    .hero-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title image"
+            "text  image"
+            "btn   image";
+        align-items: start;
+        margin-left: 0;
+    }
+    
+    .hero-title {
+        grid-area: title;
+    }
 
-    .nav-btn {
-        padding: 0.9rem 2rem;
-        font-size: 0.9rem;
+    .hero-h2 {
+        margin: 0;
+        max-width: 320px;
+    }
+    
+    .hero-p {
+        grid-area: text;
+        margin-bottom: 0;
+    }
+    
+    .hero-illustration-div {
+        grid-area: image;
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+    }
+    
+    .hero-illustration {
+        padding-top: 0;
+        max-width: 350px;
+    }
+    
+    .hero-btn-div {
+        grid-area: btn;
+        justify-content: flex-start;
+    }
+    
+    .hero-btn {
+        width: auto;
+        padding: 1rem 2rem;
+        margin: 0;
+    }
+
+    .partners {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .partners-logo {
+        max-width: 90px;
+    }
+    
+    .services-text-div {
+        display: flex;
+        align-items: center;
+    }
+
+    .services-description {
+        text-align: left;
+        max-width: 550px;
+        margin-left: 1.5rem;
+        padding: 0;
+    }
+
+    .learn-more-p {
         display: block;
     }
 }
 
-@media all and (min-width: 1024px) {
-    .menu {
-        display: none;
+@media all and (min-width: 880px) {
+    .hero-illustration {
+        margin-right: 1.7rem;
     }
 
-    .header {
-        display: flex;
-        gap: 40px;
-        margin: 1.7rem 2rem;
+    .partners-logo {
+        max-width: 110px;
+    }
+}
+
+@media all and (min-width: 960px) {
+    section, .header {
+        padding: 0 2.2rem;
     }
 
-    nav {
-        display: block;
+    .hero-illustration {
+        max-width: 360px;
+        margin-right: 2.4rem;
     }
 
-    .nav-links {
-        display: flex;
-        position: static;
-        right: auto;
-        width: auto;
-        height: auto;
-        padding: 0;
-        background-color: transparent;
-        flex-direction: row;
-        align-items: center;
-        gap: 2rem;
-        transition: none;
-        z-index: auto;
+    .hero-h2 {
+        font-size: 2.4rem;
+        max-width: 380px;
+    }
+    
+    .hero-p {
+        font-size: 1.1rem;
+        margin-top: 1rem;
     }
 
-    .nav-btn {
-        padding: 0.9rem 2rem;
-        font-size: 0.9rem;
-        display: block;
+    .hero-btn {
+        margin-top: 1.5rem;
+        padding: 1rem 2.4rem;
+    }
+}
+
+@media all and (min-width: 1100px) {
+    .hero-illustration {
+        max-width: 380px;
+        margin-right: 5rem;
+    }
+
+    .hero-p {
+        max-width: 450px;
     }
 }

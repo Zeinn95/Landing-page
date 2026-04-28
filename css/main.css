@@ -14,6 +14,24 @@ body {
     font-family: "Space Grotesk";
 }
 
+section {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 0.6rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 1.7rem auto;
+    padding: 0 0.6rem;
+}
+
 .menu {
     display: flex;
     gap: 10px;
@@ -38,22 +56,16 @@ body {
     display: none;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    margin: 1.7rem 2rem;
-}
-
 nav {
     display: block;
 }
 
-.logo {
-    width: 100%;
-    max-width: 140px;
+.logo-div {
     z-index: 2;
+}
+
+.logo {
+    cursor: pointer;
 }
 
 .nav-links {
@@ -82,6 +94,182 @@ nav {
 
 a {
     text-decoration: none;
-    color: #191A23;
+    color: black;
     flex-shrink: 0;
+}
+
+.hero-h2 {
+    font-size: 1.6rem;
+}
+
+.hero-illustration {
+    width: 100%;
+    max-width: 270px;
+    margin-top: 0.7rem;
+}
+
+.hero-btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-btn {
+    width: 99%;
+    background-color: #191A23;
+    color: white;
+    margin-top: 1.3rem;
+    padding: 0.9rem 0;
+    border: none;
+    border-radius: 10px;
+    font-family: "Space Grotesk";
+    cursor: pointer;
+}
+
+.partners {
+    margin-top: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    place-items: center;
+}
+
+.partners-logo {
+    width: 100%;
+    max-width: 80px;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+    cursor: pointer;
+}
+
+.partners-logo:hover {
+    filter: none;
+}
+
+.section-text-div {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.first-heading, .second-heading {
+    font-weight: bold;
+    background-color: #B9FF66;
+    border-radius: 3px;
+    padding: 0 0.5rem;
+}
+
+.first-description, .second-description {
+    padding: 0.9rem 0;
+}
+
+.section-cards {
+    margin-top: 1rem;
+    /*
+    display: flex;
+    justify-content: space-around;
+    */
+}
+
+.card-service-gray {
+    background-color: #f3f3f3;
+    border: solid 1px #191A23;
+    border-radius: 30px;
+    box-shadow: 0 4px #191A23;
+    margin-top: 1.4rem;
+}
+
+.card-service-green {
+    background-color: #B9FF66;
+    border: solid 1px #191A23;
+    border-radius: 30px;
+    box-shadow: 0 4px #191A23;
+    margin-top: 1.4rem;
+}
+
+.card-service-black {
+    background-color: #191A23;
+    border: solid 1px #191A23;
+    border-radius: 30px;
+    box-shadow: 0 4px #191A23;
+    margin-top: 1.4rem;
+}
+
+.cards-heading {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.cards-heading-bg1   {
+    width: max-content;
+    font-weight: bold;
+    background-color: #B9FF66;
+    border-radius: 3px;
+    padding: 0 0.5rem;
+}
+
+.cards-heading-bg2   {
+    width: max-content;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    border-radius: 3px;
+    padding: 0 0.5rem;
+}
+
+.card1-img-div, .card2-img-div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+.card1-img, .card2-img {
+    max-width: 130px;
+}
+
+.learn-more-div {
+    display: flex;
+    margin: 1rem;
+}
+
+.learn-more-p {
+    display: none;
+}
+
+/*
+.learn-more-div {
+    display: flex;
+    margin-left: 1rem;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+} */
+
+.box1 {
+    margin-top: 3rem;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+}
+
+.box1-heading {
+    padding: 1.4rem 0 0 1.4rem;
+    font-size: 1.5rem;
+}
+
+.box1-p {
+    padding: 1.4rem 0 0 1.4rem;
+}
+
+.box1-btn {
+    padding: 1rem;
+    margin: 1.4rem 0 1.4rem 1.4rem;
+    background-color: #191A23;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: "Space Grotesk";
+    cursor: pointer;
+}
+
+.section-third {
+    margin-top: 3rem;
 }

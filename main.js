@@ -13,7 +13,6 @@ closeMenu.addEventListener('click', () => {
     menuContainer.classList.remove('show-close');
 });
 
-// Закрыть меню при клике на ссылку
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('open');
