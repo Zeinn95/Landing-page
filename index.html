@@ -6,6 +6,7 @@
       <title>Landing-Page</title>
       <link rel="stylesheet" href="./css/main.css">
       <link rel="stylesheet" href="./css/media.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
   </head>
 
   <body>
@@ -61,12 +62,12 @@
         </div>
 
         <div class="partners">
-          <img class="partners-logo" src="assets/images/Partners/Company logo-1.svg" width="15px" alt="">
-          <img class="partners-logo" src="assets/images/Partners/Company logo-2.svg" width="15px" alt="">
-          <img class="partners-logo" src="assets/images/Partners/Company logo-3.svg" width="15px" alt="">
-          <img class="partners-logo" src="assets/images/Partners/Company logo-4.svg" width="15px" alt="">
-          <img class="partners-logo" src="assets/images/Partners/Company logo-5.svg" width="15px" alt="">
-          <img class="partners-logo" src="assets/images/Partners/Company logo-6.svg" width="15px" alt="">
+          <img class="partners-logo" src="assets/images/partners/company-logo-1.svg" width="15px" alt="">
+          <img class="partners-logo" src="assets/images/partners/company-logo-2.svg" width="15px" alt="">
+          <img class="partners-logo" src="assets/images/partners/company-logo-3.svg" width="15px" alt="">
+          <img class="partners-logo" src="assets/images/partners/company-logo-4.svg" width="15px" alt="">
+          <img class="partners-logo" src="assets/images/partners/company-logo-5.svg" width="15px" alt="">
+          <img class="partners-logo" src="assets/images/partners/company-logo-6.svg" width="15px" alt="">
         </div>
       </section>
 
@@ -196,10 +197,41 @@
           <p class="second-description">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
         </div>
 
-        <div class="box2"></div>
+        <!-- Основной контейнер слайдера -->
+        <div class="swiper">
+          <!-- Обязательная обертка для слайдов -->
+          <div class="card-wrapper swiper-wrapper">
+            <!-- Сами слайды -->
+            <div class="card swiper-slide">
+              <p>For a local restaurant, we
+                implemented atargeted PPC campaign
+                that resulted in a 50% increase in 
+                website traffic and a 25%
+                increase in sales.
+              </p>
+            </div>
+            <div class="card swiper-slide">
+              <p>For a B2B software company,
+                we developed an SEO
+                strategy that resulted in a
+                first page ranking
+                for key keywords and a 200%
+                increase in organic traffic.
+              </p>
+            </div>
+            <div class="card swiper-slide">
+              <p>For a national retail chain, we created
+                a social media marketing campaign that
+                increased followers by 25% and generated a
+                20% increase in online sales.
+              </p>
+            </div></div>
+          </div>
+        </div>
       </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

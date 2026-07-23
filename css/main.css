@@ -273,3 +273,12 @@ a {
 .section-third {
     margin-top: 3rem;
 }
+
+.card {
+    background-color: #191A23;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
